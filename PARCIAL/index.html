@@ -1,0 +1,59 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>PARCIAL</title>
+<LINK href="estilo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="img/foto_perfil.jpg">
+           <p>Melida Cristina Perez Ordoñez</p>
+       </header>
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Programacion Web</td></tr>
+               <tr><td>Asp</td><td>Jsp</td></tr>
+               <tr><td>Php</td><td>Ruby</td></tr>
+               <tr><td>Python</td><td>Go</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+            <form>
+      <input type="text" name="txt_nombres" placeholder="Ingrese Nombres" id="nombre" >
+      <input type="text" name="txt_apellidos" placeholder="Ingrese Apellidos" id="apellido" >
+      <input type="number" name="txt_telefono" placeholder="Ingrese Numero Telefonico"  id="telefono">
+      <input type="email" name="txt_correo" placeholder="Ingrese Correo Electronico" id="correo" >
+      <input type="date" name="txt_fn" placeholder="Ingrese Fecha Nacimiento" id="fecha">
+      <textarea name="txt_mensaje" placeholder="Ingrese el Mensaje" id="btn_enviar"></textarea>
+    <input type="submit" class="boton" onclick="alerta()">  
+    
+    </form>
+   
+        <Script>
+        function alerta(){
+        let Nombres = document.getElementById('nombre').value;
+        let Apellidos = document.getElementById('apellido').value;
+        let Telefono = document.getElementById('telefono').value;
+        let Correo = document.getElementById('correo').value;
+        let Fecha = document.getElementById('fecha').value;
+
+            alert(Nombres  + "\n" + Apellidos + "\n" + Telefono + "\n" + Correo + "\n" + Fecha);
+        }
+        
+       </Script>
+
+
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+       </div>
+       <footer>
+        <p  align=center>Aprende a Programar
+             Fácil y Rápido &copy;</p>
+        </footer>
+
+    </body>
+   
+</html>
